@@ -87,15 +87,15 @@ exit(0);
 __DATA__
 @@ test.html.ep
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf8">
-		<title>Log Search</title>
-	</head>
-	<body>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+        <title>Log Search</title>
+    </head>
+    <body>
         <form method="post">
-			<input type="text" value="<%= $email if defined $email %>" placeholder="enter E-mail for search the logs" name="email"><br/>
-			<input type="submit" value="Поиск">
-		</form>
+            <input type="text" value="<%= $email if defined $email %>" placeholder="enter E-mail for search the logs" name="email"><br/>
+            <input type="submit" value="Поиск">
+        </form>
         <br/><br/>
         <hr/>
         % if ( defined $header ) {
